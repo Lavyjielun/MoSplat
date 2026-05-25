@@ -1,0 +1,10 @@
+/output
+/build
+/data
+
+*.pyc
+*.npz
+*.ply
+*.cdf
+*.json
+*.sh 
