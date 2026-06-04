@@ -1,13 +1,13 @@
-# SkelSplat: Robust Multi-view 3D Human Pose Estimation with Differentiable Gaussian Rendering
+# MoSplat: Motion-Driven Skeletal Topology Discovery from Multi-View Videos via 3D Gaussian Splatting
 
-We propose SkelSplat, a novel framework for multi-view 3D human pose estimation based on differentiable Gaussian rendering.
-Human pose is modeled as a skeleton of 3D Gaussians, one per joint, optimized via differentiable rendering to enable seamless fusion of arbitrary camera views without 3D ground-truth supervision.
+We propose MoSplat, a novel framework for multi-view 3D human pose estimation based on differentiable Gaussian rendering.
+Human pose is modeled as a set of discrete 3D Gaussian joints, which are organized into body-part groups and progressively connected through motion-driven topology inference without 3D ground-truth supervision.
 
 ![Alt text](assets/framework.png)
 
 ## 📦 Installation
 ```bash
-git clone https://github.com/laurabragagnolo/Splat.git --recurse-submodules
+git clone https://github.com/Lavyjielun/MoSplat.git --recurse-submodules
 
 pip install -r requirements.txt
 
@@ -16,13 +16,13 @@ pip install submodules/simple-knn
 
 pip install submodules/diff-gaussian-rasterization-h36m
 pip install submodules/diff-gaussian-rasterization-panoptic
-pip install submodules/diff-gaussian-rasterization-op
+pip install submodules/diff-gaussian-rasterization-foshan
 ```
 
 
 ## ⚙️ Data Preparation
 
-SkelSplat has been tested on four datasets: Human3.6M, Human3.6M-Occ, CMU Panoptic and Occlusion-Person.
+SkelSplat has been tested on four datasets: Human3.6M, CMU Panoptic and KungFu Cap.
 For data preparation refer to [Data Preprocessing](dataset_tools/README.md) and code provided in `dataset_tools/`.
 
 ## 🚀 How to run the code

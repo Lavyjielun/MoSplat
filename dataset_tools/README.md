@@ -101,11 +101,6 @@ cd h36m
 python compute_initial_guess.py
 ```
 
-## Human3.6M-Occ Dataset
-
-Generate occluded versions (Occ-2 / Occ-3 / Occ-3-Hard) of Human3.6M following [this repo](https://github.com/laurabragagnolo/human3.6m-occluded).
-Organize data and produce initial guess following the procedure described for Human3.6M.
-
 ## CMU Panoptic Dataset
 
 **1. Preliminaries**
